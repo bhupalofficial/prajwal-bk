@@ -6,38 +6,35 @@
     
     <!-- SEO Meta Tags -->
     <title>Prajwal Bishwakarma - Web Developer Portfolio</title>
-    <meta name="description" content="Portfolio of Prajwal Bishwakarma, a passionate Web Developer based in Kathmandu, Nepal. Specializing in modern, responsive, and user-friendly web experiences." />
-    <meta name="keywords" content="Prajwal Bishwakarma, Web Developer, Portfolio, Frontend Developer, Kathmandu, Nepal, HTML, CSS, JavaScript, React" />
+    <meta name="description" content="Portfolio of Prajwal Bishwakarma, a passionate Web Developer based in Kathmandu, Nepal. Specializing in modern, responsive web applications and digital experiences." />
+    <meta name="keywords" content="Prajwal Bishwakarma, Web Developer, Portfolio, Nepal, Kathmandu, Frontend Developer, Full Stack Developer, HTML, CSS, JavaScript, React" />
     <meta name="author" content="Prajwal Bishwakarma" />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://prajwalbk.com.np/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://prajwalbk.com.np/" />
     <meta property="og:title" content="Prajwal Bishwakarma - Web Developer Portfolio" />
-    <meta property="og:description" content="Explore the portfolio of Prajwal Bishwakarma, building immersive web experiences with passion and precision." />
-    <meta property="og:image" content="image/cover.jpeg" />
+    <meta property="og:description" content="Explore the portfolio of Prajwal Bishwakarma. Building immersive web experiences with passion and precision." />
+    <meta property="og:image" content="https://prajwalbk.com.np/image/cover.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://prajwalbk.com.np/" />
     <meta property="twitter:title" content="Prajwal Bishwakarma - Web Developer Portfolio" />
-    <meta property="twitter:description" content="Explore the portfolio of Prajwal Bishwakarma, building immersive web experiences with passion and precision." />
-    <meta property="twitter:image" content="image/cover.jpg" />
+    <meta property="twitter:description" content="Explore the portfolio of Prajwal Bishwakarma. Building immersive web experiences with passion and precision." />
+    <meta property="twitter:image" content="https://prajwalbk.com.np/image/cover.jpg" />
 
-    <!-- Canonical Link (Replace with your actual domain when live) -->
-    <link rel="canonical" href="https://prajwalbk.com.np/" />
-
-    <!-- JSON-LD Structured Data -->
+    <!-- Structured Data (JSON-LD) for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Prajwal Bishwakarma",
-      "url": "https://prajwalbishwakarma.com.np/",
-      "image": "image/photo.jpeg",
+      "url": "https://prajwalbk.com.np",
+      "image": "https://prajwalbk.com.np/image/photo.jpeg",
       "jobTitle": "Web Developer",
-      "description": "A dedicated developer with a knack for creating elegant solutions to complex problems.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Kathmandu",
@@ -72,8 +69,6 @@
     </script>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
@@ -95,9 +90,9 @@
 <script type="importmap">
 {
   "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
   }
 }
 </script>
@@ -111,7 +106,7 @@
                 
                 <!-- Logo / Name -->
                 <div class="flex-shrink-0">
-                    <button onclick="navigateToSection('home')" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-teal-500 dark:from-blue-400 dark:to-teal-300" aria-label="Go to Homepage">
+                    <button onclick="navigateToSection('home')" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-teal-500 dark:from-blue-400 dark:to-teal-300 focus:outline-none">
                         Prajwal Bishwakarma
                     </button>
                 </div>
@@ -126,8 +121,7 @@
 
                     <!-- Search Box -->
                     <div class="relative">
-                        <label for="search-desktop" class="sr-only">Search</label>
-                        <input type="text" id="search-desktop" placeholder="Search..." class="pl-10 pr-4 py-1.5 rounded-full border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm w-48 lg:w-64 transition-colors">
+                        <input type="text" placeholder="Search..." class="pl-10 pr-4 py-1.5 rounded-full border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm w-48 lg:w-64 transition-colors">
                         <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2"></i>
                     </div>
 
@@ -139,10 +133,10 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center space-x-4">
-                    <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle theme">
+                    <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle theme mobile">
                         <i id="theme-icon-mobile" data-lucide="moon" class="w-5 h-5"></i>
                     </button>
-                    <button onclick="toggleMobileMenu()" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Open mobile menu">
+                    <button onclick="toggleMobileMenu()" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Open menu">
                         <i id="menu-icon" data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
@@ -157,8 +151,7 @@
                 <button onclick="navigateToSection('contact')" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-800">Contact</button>
                 <div class="px-3 py-2">
                     <div class="relative">
-                        <label for="search-mobile" class="sr-only">Search</label>
-                        <input type="text" id="search-mobile" placeholder="Search..." class="pl-10 pr-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
+                        <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
                         <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2"></i>
                     </div>
                 </div>
@@ -175,11 +168,9 @@
                 <!-- Background Image -->
                 <div class="absolute inset-0 z-0">
                     <img 
-                        src="image/cover.jpg" 
-                        alt="Digital atmosphere background" 
+                        src="image/cover.jpeg" 
+                        alt="Background cover image showing technology or landscape"
                         class="w-full h-full object-cover"
-                        width="1920"
-                        height="1080"
                     >
                     <div class="absolute inset-0 bg-black/50 dark:bg-black/60"></div>
                 </div>
@@ -193,10 +184,10 @@
                         Exploring the digital frontier one pixel at a time. Building immersive web experiences with passion and precision.
                     </p>
                     <div class="flex justify-center gap-4">
-                        <button onclick="navigateToSection('contact')" class="px-8 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all transform hover:scale-105 shadow-lg" aria-label="Go to contact section">
+                        <button onclick="navigateToSection('contact')" class="px-8 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all transform hover:scale-105 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                             Get in Touch
                         </button>
-                        <button onclick="navigateToSection('about')" class="px-8 py-3 rounded-full bg-transparent border-2 border-white text-white font-semibold hover:bg-white hover:text-gray-900 transition-all transform hover:scale-105 shadow-lg" aria-label="Go to about section">
+                        <button onclick="navigateToSection('about')" class="px-8 py-3 rounded-full bg-transparent border-2 border-white text-white font-semibold hover:bg-white hover:text-gray-900 transition-all transform hover:scale-105 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
                             Learn More
                         </button>
                     </div>
@@ -214,11 +205,9 @@
                                 <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-teal-500 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                                 <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl">
                                     <img 
-                                        src="image/photo.jpg" 
-                                        alt="Portrait of Prajwal Bishwakarma, Web Developer"
+                                        src="image/photo.jpeg"
+                                        alt="Portrait of Prajwal Bishwakarma"
                                         class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
-                                        width="500"
-                                        height="500"
                                     >
                                 </div>
                             </div>
@@ -231,7 +220,7 @@
                             </h2>
                             <div class="space-y-4 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                                 <p>
-                                    Hi! I'm Prajwal, a dedicated developer with a knack for creating elegant solutions to complex problems. 
+                                    Hi! I'm Prajwal, a dedicated developer based in Kathmandu, with a knack for creating elegant solutions to complex problems. 
                                     My journey in tech started with a curiosity for how things work, and it has evolved into a full-blown passion for web development.
                                 </p>
                                 <p>
@@ -265,11 +254,11 @@
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                     <div>
                                         <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name</label>
-                                        <input type="text" id="name" name="name" autocomplete="name" class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Your Name" required>
+                                        <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Your Name" required>
                                     </div>
                                     <div>
                                         <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
-                                        <input type="email" id="email" name="email" autocomplete="email" class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="your@email.com" required>
+                                        <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="your@email.com" required>
                                     </div>
                                 </div>
                                 <div>
@@ -280,7 +269,7 @@
                                     <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
                                     <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none" placeholder="Tell me about your project..." required></textarea>
                                 </div>
-                                <button type="submit" class="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-md hover:shadow-lg transform transition hover:-translate-y-1 flex items-center justify-center gap-2">
+                                <button type="submit" class="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-md hover:shadow-lg transform transition hover:-translate-y-1 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                                     <i data-lucide="send" class="w-5 h-5"></i> Send Message
                                 </button>
                             </form>
@@ -312,7 +301,7 @@
                                     </div>
                                     <div>
                                         <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Email</h4>
-                                        <p class="text-gray-600 dark:text-gray-400">contact@prajwal.com</p>
+                                        <p class="text-gray-600 dark:text-gray-400">contact@prajwalbk.com.np</p>
                                     </div>
                                 </div>
 
@@ -354,7 +343,7 @@
         <div id="privacy-view" class="hidden">
             <div class="py-16 bg-white dark:bg-gray-900 min-h-screen">
                 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <button onclick="showHomeView()" class="flex items-center text-blue-600 dark:text-blue-400 hover:underline mb-8 font-medium" aria-label="Back to Home">
+                    <button onclick="showHomeView()" class="flex items-center text-blue-600 dark:text-blue-400 hover:underline mb-8 font-medium">
                         <i data-lucide="arrow-left" class="w-5 h-5 mr-2"></i>
                         Back to Home
                     </button>
@@ -368,7 +357,7 @@
                             <section>
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">1. Introduction</h2>
                                 <p>
-                                    Welcome to the portfolio website of Prajwal Bishwakarma. We respect your privacy and are committed to protecting your personal data. 
+                                    Welcome to the portfolio website of Prajwal Bishwakarma (prajwalbk.com.np). We respect your privacy and are committed to protecting your personal data. 
                                     This privacy policy will inform you as to how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you.
                                 </p>
                             </section>
@@ -419,7 +408,7 @@
         <div id="terms-view" class="hidden">
             <div class="py-16 bg-white dark:bg-gray-900 min-h-screen">
                 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <button onclick="showHomeView()" class="flex items-center text-blue-600 dark:text-blue-400 hover:underline mb-8 font-medium" aria-label="Back to Home">
+                    <button onclick="showHomeView()" class="flex items-center text-blue-600 dark:text-blue-400 hover:underline mb-8 font-medium">
                         <i data-lucide="arrow-left" class="w-5 h-5 mr-2"></i>
                         Back to Home
                     </button>
@@ -433,7 +422,7 @@
                             <section>
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">1. Acceptance of Terms</h2>
                                 <p>
-                                    By accessing and using this portfolio website, you accept and agree to be bound by the terms and provision of this agreement. In addition, when using this website's particular services, you shall be subject to any posted guidelines or rules applicable to such services.
+                                    By accessing and using this portfolio website (prajwalbk.com.np), you accept and agree to be bound by the terms and provision of this agreement. In addition, when using this website's particular services, you shall be subject to any posted guidelines or rules applicable to such services.
                                 </p>
                             </section>
 
@@ -609,4 +598,3 @@
     </script>
 </body>
 </html>
-
